@@ -4,19 +4,27 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vue-tsc -b && vite build",
+    "build:test": "vue-tsc && vite build --mode test",
+    "build:pro": "vue-tsc && vite build --mode production",
     "preview": "vite preview"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.7.7",
     "element-plus": "^2.8.1",
     "vue": "^3.4.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
+    "fast-glob": "^3.3.2",
+    "mockjs": "^1.1.0",
+    "sass-embedded": "^1.78.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
+    "vite-plugin-mock": "2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vue-tsc": "^2.0.29"
   }
 }
